@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Express</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="estilos.css">
+
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+
+<header>
+    <h1>☕ Cafetería Express</h1>
+</header>
+
+<section class="productos">
+    <div class="producto">
+        <h2>Café Americano</h2>
+        <p>$35 MXN</p>
+        <button onclick="agregarPedido('Café Americano')">
+            Pedir
+        </button>
+    </div>
+
+    <div class="producto">
+        <h2>Capuchino</h2>
+        <p>$50 MXN</p>
+        <button onclick="agregarPedido('Capuchino')">
+            Pedir
+        </button>
+    </div>
+
+    <div class="producto">
+        <h2>Pastel de Chocolate</h2>
+        <p>$45 MXN</p>
+        <button onclick="agregarPedido('Pastel')">
+            Pedir
+        </button>
+    </div>
+</section>
+
+<h2>Mis Pedidos</h2>
+<ul id="listaPedidos"></ul>
+
+<script src="app.js"></script>
+
+</body>
+</html>
